@@ -1,0 +1,40 @@
+<section class="section">
+  <h1 class="text-center text-[#2C4C4B] font-[700] text-[2.25em] mb-7">
+    Servicios
+  </h1>
+  <!-- todo: agregar texto descriptivo -->
+  <ul class="section-list">
+    <li>
+      <p>Evaluación</p>
+    </li>
+    <li><p>Diagnóstico</p></li>
+    <li><p>Intervención</p></li>
+    <li><p>Terapia individual</p></li>
+    <li><p>Terapia de parejas</p></li>
+    <li><p>Certificado de salud mental (Con previa valoración)</p></li>
+    <li><p>Entrenamiento de padres</p></li>
+    <li><p>Capacitacion a docentes y directivaos</p></li>
+    <li><p>Talleres grupales</p></li>
+  </ul>
+</section>
+<style lang="scss">
+  .section {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    @media (768px <= width <=55.25rem) {
+      padding: 1.875rem 3.125rem;
+    }
+    @media (64rem <= width <= 160rem) {
+      padding: 3.125rem 20%;
+    }
+    &-list {
+      display: grid;
+      width: 100%;
+      max-width: 600px;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      align-self: center;
+    }
+  }
+</style>
