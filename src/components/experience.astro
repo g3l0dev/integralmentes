@@ -1,0 +1,35 @@
+---
+import ExperienceItem from "./experience-item.astro";
+
+const EXPERIENCE = [
+  {
+    body: "Tratamientos del neurodesarrollo.",
+  },
+  {
+    body: "Trastornos del estado de ánimo",
+  },
+  {
+    body: "Problemas de autoconceptos y autoestima.",
+  },
+  {
+    body: "Problemas de aprendizaje",
+  },
+  {
+    body: "Problemas de aprendizaje",
+  },
+  {
+    body: "Ejecución de proyectos psicosociales",
+  },
+];
+---
+
+<ul
+  class="relative border-s border-gray-200 dark:border-gray-700 flex flex-col gap-4">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="mb-4 ms-4">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ul>

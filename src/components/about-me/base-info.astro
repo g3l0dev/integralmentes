@@ -1,5 +1,6 @@
 ---
-
+import Experience from "@components/experience.astro";
+import Formation from "@components/formation.astro";
 ---
 
 <section class="section">
@@ -12,109 +13,11 @@
   </p>
 
   <h1 class="section-principal">Educación y formación</h1>
-
-  <ol
-    class="relative
-    border-s
-    border-gray-200
-    dark:border-gray-700
-    flex
-    flex-col
-    gap-4
-    mb-6">
-    <li class="mb-4 ms-4">
-      <div
-        class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
-      </div>
-      <h3 class="text-[1.5em] font-semibold">Psicología</h3>
-      <span class="text-[1.125em] text-[#2f5654]/50 font-bold"
-        >USB - Cartagena</span
-      >
-    </li>
-    <li class="mb-4 ms-4">
-      <div
-        class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
-      </div>
-      <h3 class="text-[1.5em] font-semibold">
-        Especialista en psicología clínica de niños y adolescentes
-      </h3>
-      <span class="text-[1.125em] text-[#2f5654]/50 font-bold"
-        >Unisinu - Cartagena</span
-      >
-    </li>
-    <li class="mb-4 ms-4">
-      <div
-        class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
-      </div>
-      <h3 class="text-[1.5em] font-semibold">
-        Master en psicoterapia cognitivo - conductual
-      </h3><span class="text-[1.125em] text-[#2f5654]/50 font-bold"
-        >Universidad tecnológica internacional</span
-      >
-    </li>
-    <li class="mb-4 ms-4">
-      <div
-        class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
-      </div>
-      <h3 class="text-[1.5em] font-semibold">Docencia universitaria</h3><span
-        class="text-[1.125em] text-[#2f5654]/50 font-bold"
-        >Universidad Javeriana</span
-      >
-    </li>
-    <li class="mb-4 ms-4">
-      <div
-        class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
-      </div>
-      <h3 class="text-[1.5em] font-semibold">
-        Primero auxilios psicológicos
-      </h3><span class="text-[1.125em] text-[#2f5654]/50 font-bold"
-        >Universidad de los Andes</span
-      >
-    </li>
-  </ol>
-
+  <Formation />
   <h2 class="text-[1.5rem] text-balance font-semibold text-[#2f5654] mb-6">
     Experiencia
   </h2>
-  <ul
-    class="relative border-s border-gray-200 dark:border-gray-700 flex flex-col gap-4">
-    <li class="mb-4 ms-4">
-      <div
-        class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
-      </div>
-      <p><strong>Tratamientos del neurodesarrollo.</strong></p>
-    </li>
-    <li class="mb-4 ms-4">
-      <div
-        class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
-      </div>
-      <p><strong>Trastornos del estado de ánimo</strong></p>
-    </li>
-    <li class="mb-4 ms-4">
-      <div
-        class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
-      </div>
-      <p><strong>Problemas de autoconceptos y autoestima.</strong></p>
-    </li>
-    <li class="mb-4 ms-4">
-      <div
-        class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
-      </div>
-      <p><strong>Problemas de aprendizaje</strong></p>
-    </li>
-    <li class="mb-4 ms-4">
-      <div
-        class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
-      </div>
-      <p><strong>Desregulación emocional. </strong></p>
-    </li>
-    <li class="mb-4 ms-4">
-      <div
-        class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
-      </div>
-      <p><strong>Ejecución de proyectos psicosociales</strong></p>
-    </li>
-  </ul>
+  <Experience />
 </section>
 
 <style lang="scss">

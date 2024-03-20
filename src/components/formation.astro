@@ -1,0 +1,44 @@
+---
+import FormationItem from "./formation-item.astro";
+
+const FORMATION = [
+  {
+    title: "Psicología",
+    subtitle: "USB - Cartagena",
+  },
+  {
+    title: "Especialista en psicología clínica de niños y adolescentes",
+    subtitle: "Unisinu - Cartagena",
+  },
+  {
+    title: "Master en psicoterapia cognitivo - conductual",
+    subtitle: "Universidad tecnológica internacional",
+  },
+  {
+    title: "Docencia universitaria",
+    subtitle: "Universidad Javeriana",
+  },
+  {
+    title: "Primero auxilios psicológicos",
+    subtitle: "Universidad de los Andes",
+  },
+];
+---
+
+<ol
+  class="relative
+    border-s
+    border-gray-200
+    dark:border-gray-700
+    flex
+    flex-col
+    gap-4
+    mb-6">
+  {
+    FORMATION.map((formation) => (
+      <li class="mb-4 ms-4">
+        <FormationItem {...formation} />
+      </li>
+    ))
+  }
+</ol>
