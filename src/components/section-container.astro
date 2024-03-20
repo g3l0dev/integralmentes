@@ -1,0 +1,21 @@
+---
+interface Props {
+  class?: string;
+}
+---
+
+<section class=`${Astro.props.class}`>
+  <slot />
+</section>
+
+<style lang="scss">
+  section {
+    padding: 1.25rem 1rem;
+    @media (768px <= width <= 884px) {
+      padding: 2rem 1.25rem;
+    }
+    @media (1024px <= width <= 2560px) {
+      padding: 2rem 20%;
+    }
+  }
+</style>

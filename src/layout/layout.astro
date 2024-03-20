@@ -12,10 +12,21 @@ const { title, description } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <title>{title}</title>
   </head>
   <body>
     <slot />
   </body>
 </html>
+
+<style is="global">
+  :root {
+    /* margenes */
+    --m: 1.25rem 1rem;
+    --md: 2rem 1.25rem;
+    --xl: 3.125rem 20%;
+
+    --title: #2f5654;
+  }
+</style>

@@ -7,6 +7,6 @@ interface Props {
 const { url, body } = Astro.props;
 ---
 
-<a class=`${Astro.props.class} bg-[#468681] text-[#fafbfc] py-3 px-5 rounded-[0.5rem]` href={url}
+<a class=`${Astro.props.class} bg-[#468681] text-[#fafbfc] py-3 px-5 rounded-full` href={url}
   >{body}</a
 >

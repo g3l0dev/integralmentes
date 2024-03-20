@@ -12,49 +12,52 @@ import Cta from "@components/cta.astro";
     </h1>
     <Cta class="self-start" url="#" body="¡Explora ahora!" />
   </div>
-
-  <style lang="scss">
-    .hero {
-      padding: 1rem;
-      position: relative;
-      height: 65vh;
+</section>
+<style lang="scss">
+  .hero {
+    padding: 1.25rem 1rem;
+    position: relative;
+    height: 65vh;
+    background: linear-gradient(
+      to top,
+      rgba(23, 23, 23, 0.5) 30%,
+      transparent 90%
+    );
+    @media (48rem <= width <= 50rem) {
+      height: 60vh;
+      padding: 1.875rem 3.125rem;
+    }
+    @media (64rem <= width <= 160rem) {
+      padding: 50px 20%;
+      height: 80vh;
       background: linear-gradient(
-        to top,
+        to right,
         rgba(23, 23, 23, 0.5) 30%,
         transparent 90%
       );
-      @media (48rem <= width <= 50rem) {
-        height: 60vh;
-        padding: 1.875rem 3.125rem;
-      }
-      @media (64rem <= width <= 160rem) {
-        padding: 50px 20%;
-        height: 80vh;
-        background: linear-gradient(to right, rgba(23,23,23,0.5)30%, transparent 90%);
-      }
-      &__banner {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        z-index: -10;
-        background-image: url("/img/banner.webp");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 50% 0;
-        @media(48rem <= width <= 160rem){
-          background-position: center center;
-        }
-      }
-      &__container {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        max-width: 50rem;
-        height: 100%;
-        justify-content: flex-end;
+    }
+    &__banner {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -10;
+      background-image: url("/img/banner.webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      @media (48rem <= width <= 160rem) {
+        background-position: center center;
       }
     }
-  </style>
-</section>
+    &__container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 50rem;
+      height: 100%;
+      justify-content: flex-end;
+    }
+  }
+</style>
